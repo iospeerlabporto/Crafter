@@ -1,0 +1,34 @@
+PODS:
+  - Commander (0.8.0)
+  - PathKit (0.8.0)
+  - Stencil (0.11.0):
+    - PathKit (~> 0.8.0)
+  - StencilSwiftKit (2.5.0):
+    - Stencil (~> 0.11)
+  - SwiftLint (0.26.0)
+
+DEPENDENCIES:
+  - Commander (~> 0.8.0)
+  - PathKit (~> 0.8.0)
+  - Stencil (~> 0.11.0)
+  - StencilSwiftKit (~> 2.5.0)
+  - SwiftLint
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Commander
+    - PathKit
+    - Stencil
+    - StencilSwiftKit
+    - SwiftLint
+
+SPEC CHECKSUMS:
+  Commander: 6eda7635b133e239faa85bf75dcab88d6fd63aaa
+  PathKit: dcab05d701474011aae0e40cf892298a831f63d6
+  Stencil: a1873ecd92cbc053c6b391de7583b9f5bfbb3de6
+  StencilSwiftKit: 0be4d4897cf83e9c463caa14f4732454afb33ae6
+  SwiftLint: f6b83e8d95ee1e91e11932d843af4fdcbf3fc764
+
+PODFILE CHECKSUM: 102140a406531060c5094cafce4b40a4a58ec28c
+
+COCOAPODS: 1.5.3

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		36DE4AEAAC6C22CD0D964DBD /* Pods_Crafter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 210AA7D94D4BD2C571A8B0EC /* Pods_Crafter.framework */; };
 		6B0A9C5821033F9900573189 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B0A9C5721033F9900573189 /* main.swift */; };
 /* End PBXBuildFile section */
 
@@ -23,9 +24,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		210AA7D94D4BD2C571A8B0EC /* Pods_Crafter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Crafter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		51C1B2C41FE193116E9D9DE8 /* Pods-Crafter.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Crafter.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Crafter/Pods-Crafter.debug.xcconfig"; sourceTree = "<group>"; };
 		6B0A9C5421033F9900573189 /* Crafter */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Crafter; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B0A9C5721033F9900573189 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		6B0A9C5E21033FA400573189 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		CFF2C250E72C73B91C99D87E /* Pods-Crafter.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Crafter.release.xcconfig"; path = "Pods/Target Support Files/Pods-Crafter/Pods-Crafter.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,18 +37,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				36DE4AEAAC6C22CD0D964DBD /* Pods_Crafter.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		25FADBA089A818DEFC505035 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				51C1B2C41FE193116E9D9DE8 /* Pods-Crafter.debug.xcconfig */,
+				CFF2C250E72C73B91C99D87E /* Pods-Crafter.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		37A0CE4AAED0EE51AE08DEB0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				210AA7D94D4BD2C571A8B0EC /* Pods_Crafter.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		6B0A9C4B21033F9900573189 = {
 			isa = PBXGroup;
 			children = (
 				6B0A9C5E21033FA400573189 /* README.md */,
 				6B0A9C5621033F9900573189 /* Crafter */,
 				6B0A9C5521033F9900573189 /* Products */,
+				25FADBA089A818DEFC505035 /* Pods */,
+				37A0CE4AAED0EE51AE08DEB0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,6 +95,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6B0A9C5B21033F9900573189 /* Build configuration list for PBXNativeTarget "Crafter" */;
 			buildPhases = (
+				1CA20C6F2354609F55D50FD4 /* [CP] Check Pods Manifest.lock */,
 				6B0A9C5021033F9900573189 /* Sources */,
 				6B0A9C5121033F9900573189 /* Frameworks */,
 				6B0A9C5221033F9900573189 /* CopyFiles */,
@@ -115,6 +140,27 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1CA20C6F2354609F55D50FD4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Crafter-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		6B0A9C5021033F9900573189 /* Sources */ = {
@@ -245,6 +291,7 @@
 		};
 		6B0A9C5C21033F9900573189 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 51C1B2C41FE193116E9D9DE8 /* Pods-Crafter.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5SKY58ZP6K;
@@ -255,6 +302,7 @@
 		};
 		6B0A9C5D21033F9900573189 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CFF2C250E72C73B91C99D87E /* Pods-Crafter.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5SKY58ZP6K;
