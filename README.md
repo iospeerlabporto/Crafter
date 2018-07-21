@@ -37,10 +37,16 @@ PROJECTNAME
 ```
 
 TODO
+- Define Interactive Interface (questions to the user)
+- Logic for Moving the Template into a new folder
+- Logic for Replacing MACROS
+
+(Optional)
+- Logic for generating the `.swift` files with Stencil
 - Add `swiftlint` support (add pod to Podfile and Run Script)
 - Remove Main.storyboard
-
-
+- Support for more Architectures (MVVM, MVP, CLEAN)
+- Add Xcode Templates (?)
 
 ## Tech Notes
 - Project is based on a created template in `/templates`
